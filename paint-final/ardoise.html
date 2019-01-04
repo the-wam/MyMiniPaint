@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>ardoise</title>
+    <link rel="stylesheet" href="ardoise.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!-- Librairies et classes -->
+    <script src="utilities.js"></script>
+    
+</head>
+<body>
+	<section>
+		
+	<h1>Ardoise Magique ;-)</h1>
+    <canvas id="ardoise" width="600" height="500"></canvas>
+	<canvas id="palette" width="300" height="300" class="hidden"></canvas>
+	</section>
+  <section class="access">
+    	<h2>Accessoires</h2>
+  	<article>
+  			<h3>Outils</h3>
+        <button id="gomme"><i class="fas fa-eraser"></i></button>
+  			<button id="nouveau"><i class="far fa-trash-alt"></i></i></button>
+  			<button id="pipette"><i class="fas fa-eye-dropper"></i></i></button>
+  		</article>
+  		<article>
+	  		<h3>Couleur</h3>
+	  		<a id="black" class="border_select"></a>
+	  		<a id="brown"></a>
+	  		<a id="red"></a>
+	  		<a id="yellow"></a>
+	  		<a id="green"></a>
+	  		<a id="cyan"></a>
+	  		<a id="blue"></a>
+        <a id="white" class="hidden"></a>
+  		</article>
+  		<article>
+  		<h3>Epaisseur</h3>
+	  		<input type="button" value="Fin" name="1">
+	  		<input type="button" value="Normal" name="3" class="border_select">
+	  		<input type="button" value="Epais" name="6">
+  		</article>
+    </section>
+
+    <!-- Code principal -->
+    <script src="canvas.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

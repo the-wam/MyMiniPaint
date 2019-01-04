@@ -1,0 +1,99 @@
+* {
+    box-sizing: content-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    /* structure */
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    margin:20px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+
+
+    /* presentation */
+    background-color: #ebeff1;
+    font-family: 'Open Sans', sans-serif;
+}
+
+canvas {
+    background-color: white;
+    box-shadow: 5px 5px 5px black;
+    margin: 10px;
+    cursor:pointer;
+}
+#palette {
+    cursor: crosshair;
+}
+.hidden {
+    display: none;
+}
+.select {
+    background-color: red;
+}
+.access {
+    display: flex;
+    align-content: left;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+h2 {
+    flex-basis: 100%;
+    display: block;
+}
+h3 {
+    display: inline-block;
+    width: 100px;
+}
+button, input {
+    margin: 5px;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 100px;
+    margin: 5px;
+    height: 30px;
+    width: 30px;
+    cursor: grab;
+}
+input, button {
+    cursor: grab;
+}
+
+#black {
+    background-color: black;
+}
+#brown {
+    background-color: brown;
+}
+#red {
+    background-color: red;
+}
+#yellow {
+    background-color: yellow;
+}
+#green {
+    background-color: green;
+}
+#cyan {
+    background-color: cyan;
+
+}
+#blue {
+    background-color: blue;
+}
+#paletteColor {
+    background-color: white;
+}
+.border_select {
+    border: 5px solid #666;
+}
